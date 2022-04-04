@@ -1,54 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head></head>
+<html lang="it">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pizza Riccardo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Riccardo Pilloni">
+</head>
 <body>
-    <h1>Pizza speciale Riccardo</h1>
-    <p><a href="./assets/pizza-riccardo-pilloni.jpg">
-        <img src="./assets/pizza-riccardo-pilloni.jpg" alt="pizza con rucola" width="100" height="100">
-    </a></p>
-    <p><a href="../../index.html">Pagina precedente</a></p>
+    <div class = "header">
+        <h1 >Pizza speciale Riccardo</h1>
+    </div>
+    
+    <div class="center">
+    <a href="../../index.html">Pagina precedente</a>
     <h2>Descrizione:</h2>
-    <ul>
-        <h3>Ingredienti:</h3>
-        <li><a href ="https://it.wikipedia.org/wiki/Eruca_vesicaria">Rucola </a></li>
-        <li><a href ="https://it.wikipedia.org/wiki/Provola">Provola</a></li>
-        <li><a href ="https://it.wikipedia.org/wiki/Pomodoro_di_Pachino">Ciliegini</a></li>
-    </ul>
-    <ol>
-        <h3>Ricetta:</h3>
-        <li>Mischiare la farina con l'acqua e il sale</li>
-        <li>Aggiungere il lievito</li>
-        <li>Lasciar lievitare</li>
-        <li>Stendere</li>
-        <li>Aggiungere ingredienti</li>
-        <li>Infornare</li>
-    </ol>
+    <p class="descrizione">La Pizza Riccardo è una pizza leggera e gustosa</p>
 
-    <h2>Valori Nutrizionali:</h2>
-    <table border="1">
-        <tr>
-            <th>Tipologia</th>
-            <th>Quantità</th>
-            <th>RDA</th>
-        </tr>
-        <tr>
-            <td>Carboidrati</td>
-            <td>50g</td>
-            <td>10%</td>
-        </tr>
-        <tr>
-            <td>Zuccheri</td>
-            <td>10g</td>
-            <td>20%</td>            
-        </tr>
-        <tr>
-            <td>Proteine</td>
-            <td>300g</td>
-            <td>60%</td>    
-        </tr>
-    </table>
-    <p>
-    <iframe width="280" height="160" src="https://www.youtube.com/embed/WM1XcYXix0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </p>
+    <table class="main">
+    <thead>
+        <tr><th>Ingredienti</th><th class="space"></th><th colspan="2">Info Nutrizionali</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><a href ="https://it.wikipedia.org/wiki/Lievito_naturale">Pasta madre</a></td><td></td><td>Grassi</td><td class="grams">13gr</td></tr>
+        <tr><td><a href ="https://it.wikipedia.org/wiki/Eruca_vesicaria">Rucola</a></td><td></td><td>Carboidrati</td><td class="grams">60gr</td></tr>
+        <tr><td><a href ="https://it.wikipedia.org/wiki/Provola">Provola</a></td><td></td><td>Proteine</td><td class="grams">5gr</td></tr>
+        <tr><td><a href ="https://it.wikipedia.org/wiki/Pomodoro_di_Pachino">Ciliegini</a><td></td><td>Altro</td><td class="grams">0.4gr</td></tr>
+    </tbody>
+    </table>                
+    <iframe class="videopizza" src="https://www.youtube.com/embed/WM1XcYXix0Y" title="YouTube video player" frameborder="0"></iframe>
+    </div>
 </body>
 </html>
