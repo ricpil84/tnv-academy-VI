@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prova Promise!</title>
+</head>
+
+<body>
+    <h1>User List</h1>
+    <ul id="userList">
+
+    </ul>
+    <script>
+        async function get(url) {
+            const response = await fetch(`${url}`);
+            return await response.json()
+        }
+
+        get('https://jsonplaceholder.typicode.com/users').then(res => createUserList(res));
+        get('https://jsonplaceholder.typicode.com/post').then(res => createUserList(res));
+
+
+        function createUserList(users) {
+            const userList = document.getElementById('userList');
+
+            for (let user of users) {
+                const liElement = document.createElement('li');
+                liElement.innerText = `Utente: ${user.username}, ${user.email}`;
+
+                userList.appendChild(liElement);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
